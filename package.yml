@@ -1,0 +1,18 @@
+name        : xf86driproto
+version     : 2.1.1
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/xf86driproto-2.1.1.tar.gz : 18ff8de129b89fa24a412a1ec1799f8687f96c186c655b44b1a714a3a5d15d6c
+license     :
+    - MIT
+summary     : XFree86 Direct Rendering Infrastructure Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol to allow user applications to access the video hardware without requiring data to be passed through the X server.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
